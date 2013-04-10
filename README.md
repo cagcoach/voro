@@ -16,9 +16,13 @@ files of particle configurations and use most of the features of the code.
 Numerous examples are provided to demonstrate the library's features and all of
 these are discussed in detail on the library website.
 
+Compilation with CMake
+======================
+Point CMake to src directory and let it generate the makefiles or
+project for your favourite tool/IDE.
 
-Compilation - Linux / Mac OS / Windows with Cygwin
-==================================================
+Compilation with Makefile - Linux / Mac OS / Windows with Cygwin
+================================================================
 The code is written in ANSI C++, and compiles on many system architectures. The
 package contains the C++ source code, example files, miscellaneous utilities
 and documentation. On Linux, Mac OS, and Windows (using Cygwin), the
@@ -55,14 +59,6 @@ user does not have root privileges to install into /usr/local, the "config.mk"
 file can be modified to install into the user's home directory by setting
 PREFIX=$(HOME). Voro++ supports parallel compilation by using the "make -j <n>"
 command where n is the number of threads.
-
-
-Compilation - Windows without Cygwin
-====================================
-On a Windows machine without a terminal environment like Cygwin, it is possible
-to import and compile the library in many standard C++ development
-environments. Users have reported success in building the library with
-Microsoft Visual C++ Express and Code::Blocks.
 
 
 Related programs

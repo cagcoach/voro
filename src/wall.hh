@@ -116,4 +116,6 @@ struct wall_cone : public wall {
 
 }
 
+#include "wall.inline.hh"
+
 #endif

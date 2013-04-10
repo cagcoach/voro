@@ -1088,7 +1088,7 @@ bool voronoicell_base::nplane(vc_class &vc,double x,double y,double z,double rsq
 			qp=*edp;
 			if(qp!=-1&&ed[qp][nu[qp]]!=-1) {
 				if(stackp==stacke) {
-					int dis=stackp-dsp;
+					int dis=(int)(stackp-dsp);
 					add_memory_ds(stackp);
 					dsp=ds+dis;
 				}
@@ -1853,8 +1853,8 @@ void voronoicell_base::face_vertices(std::vector<int> &v) {
 				l=cycle_up(ed[k][nu[k]+l],m);
 				k=m;
 			} while (k!=i);
-			vn=v.size();
-			v[vp]=vn-vp-1;
+			vn=(int)v.size();
+			v[vp]=(int)(vn-vp-1);
 			vp=vn;
 		}
 	}

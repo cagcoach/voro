@@ -4,6 +4,9 @@
 // Email    : chr@alum.mit.edu
 // Date     : August 30th 2011
 
+#include "v_base.hh" 
+using namespace voro;
+
 /** \file v_base_wl.cc
  * \brief The table of block worklists that are used during the cell
  * computation, which is part of the voro_base class.

@@ -53,7 +53,7 @@ class pre_container_base {
 		const bool zperiodic;
 		void guess_optimal(int &nx,int &ny,int &nz);
 		pre_container_base(double ax_,double bx_,double ay_,double by_,double az_,double bz_,bool xperiodic_,bool yperiodic_,bool zperiodic_,int ps_);
-		~pre_container_base();
+		virtual ~pre_container_base();
 		/** Calculates and returns the total number of particles stored
 		 * within the class.
 		 * \return The number of particles. */

@@ -93,7 +93,7 @@ class container_periodic_base : public unitcell, public voro_base {
 		const int ps;
 		container_periodic_base(double bx_,double bxy_,double by_,double bxz_,double byz_,double bz_,
 				int nx_,int ny_,int nz_,int init_mem_,int ps);
-		~container_periodic_base();
+		virtual ~container_periodic_base();
 		/** Prints all particles in the container, including those that
 		 * have been constructed in image blocks. */
 		inline void print_all_particles() {

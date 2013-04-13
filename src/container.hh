@@ -57,7 +57,7 @@ class wall_list {
 		 */
 		wall **wep;
 		wall_list();
-		~wall_list();
+		virtual ~wall_list();
 		/** Adds a wall to the list.
 		 * \param[in] w the wall to add. */
 		inline void add_wall(wall *w) {
@@ -161,7 +161,7 @@ class container_base : public voro_base, public wall_list {
 		container_base(double ax_,double bx_,double ay_,double by_,double az_,double bz_,
 				int nx_,int ny_,int nz_,bool xperiodic_,bool yperiodic_,bool zperiodic_,
 				int init_mem,int ps_);
-		~container_base();
+		virtual ~container_base();
 		bool point_inside(double x,double y,double z);
 		void region_count();
 		/** Initializes the Voronoi cell prior to a compute_cell

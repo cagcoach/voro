@@ -52,7 +52,7 @@ class particle_order {
 			: o(new int[init_size<<1]),op(o),size(init_size) {}
 		/** The particle_order destructor frees the dynamically allocated
 		 * memory used to store the ordering information. */
-		~particle_order() {
+		virtual ~particle_order() {
 			delete [] o;
 		}
 		/** Adds a record to the order, corresponding to the memory

@@ -87,7 +87,7 @@ class voro_compute {
 		voro_compute(c_class &con_,int hx_,int hy_,int hz_);
 		/** The class destructor frees the dynamically allocated memory
 		 * for the mask and queue. */
-		~voro_compute() {
+		virtual ~voro_compute() {
 			delete [] qu;
 			delete [] mask;
 		}

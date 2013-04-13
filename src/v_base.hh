@@ -57,7 +57,7 @@ class voro_base {
 		static const unsigned int wl[wl_seq_length*wl_hgridcu];
 		bool contains_neighbor(const char* format);
 		voro_base(int nx_,int ny_,int nz_,double boxx_,double boxy_,double boxz_);
-		~voro_base() {delete [] mrad;}
+		virtual ~voro_base() {delete [] mrad;}
 	protected:
 		/** A custom int function that returns consistent stepping
 		 * for negative numbers, so that (-1.5, -0.5, 0.5, 1.5) maps

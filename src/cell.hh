@@ -84,7 +84,7 @@ class voronoicell_base {
 		 * the positions of the vertices. */
 		double *pts;
 		voronoicell_base();
-		~voronoicell_base();
+		virtual ~voronoicell_base();
 		void init_base(double xmin,double xmax,double ymin,double ymax,double zmin,double zmax);
 		void init_octahedron_base(double l);
 		void init_tetrahedron_base(double x0,double y0,double z0,double x1,double y1,double z1,double x2,double y2,double z2,double x3,double y3,double z3);
@@ -416,7 +416,7 @@ class voronoicell_neighbor : public voronoicell_base {
 		 * face that is clockwise from the jth edge. */
 		int **ne;
 		voronoicell_neighbor();
-		~voronoicell_neighbor();
+		virtual ~voronoicell_neighbor();
 		void operator=(voronoicell &c);
 		void operator=(voronoicell_neighbor &c);
 		/** Cuts the Voronoi cell by a particle whose center is at a

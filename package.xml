@@ -1,0 +1,11 @@
+<package>
+  <name>voro</name>
+  <version>0.4.6</version>
+  <description>Voro++ is a open source software library for the computation of the Voronoi diagram, a widely-used tessellation that has applications in many scientific fields.</description>
+  <maintainer email="chr@math.berkeley.edu">Chris H. Rycroft</maintainer>
+  <license>Modified BSD license</license>
+
+  <author>Chris H. Rycroft</author>
+
+  <buildtool_depend>catkin</buildtool_depend>  
+</package>
